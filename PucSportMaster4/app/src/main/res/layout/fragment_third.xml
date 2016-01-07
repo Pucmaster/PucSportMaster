@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/summ"
+        android:textSize="30dp"
+        android:id="@+id/mainText">
+    </TextView>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ttltime"
+        android:layout_below="@+id/mainText"
+        android:textSize="20dp"
+        android:id="@+id/TimeSummaryText">
+        ></TextView>
+    <TextView android:id="@+id/Summary_hours_id"
+        android:text="00"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_below="@id/mainText"
+        android:layout_toRightOf="@id/TimeSummaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text=":"
+        android:layout_below="@id/mainText"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/SummarydoubleDot"
+        android:layout_toRightOf="@id/Summary_hours_id"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView android:id="@+id/Summmary_minutes_id"
+        android:layout_toRightOf="@id/SummarydoubleDot"
+        android:text="00"
+        android:layout_below="@id/mainText"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView android:text=":"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/SummaryDoubleDotMin"
+        android:layout_toRightOf="@id/Summmary_minutes_id"
+        android:textSize="20dp"
+        android:layout_below="@id/mainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView android:id="@+id/Summary_seconds_id"
+        android:text="00"
+
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@id/SummaryDoubleDotMin"
+        android:layout_below="@id/mainText"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="."
+
+        android:layout_toRightOf="@+id/Summary_seconds_id"
+        android:layout_below="@id/mainText"
+        android:textSize="20dp"
+        android:id="@+id/SummarysecDot"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView android:id="@+id/Summmary_tenth_id"
+        android:text="0"
+        android:layout_below="@id/mainText"
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@+id/SummarysecDot"
+
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/totaldistdot"
+        android:layout_below="@+id/TimeSummaryText"
+        android:textSize="20dp"
+        android:id="@+id/DistanceSummaryText">
+        ></TextView>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/TimeSummaryText"
+
+        android:layout_toRightOf="@+id/DistanceSummaryText"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:id="@+id/DistanceSummaryValue">
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mxspeed"
+        android:layout_below="@+id/DistanceSummaryText"
+        android:textSize="20dp"
+        android:id="@+id/MaxSpeedSummaryText">
+        
+        ></TextView>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/DistanceSummaryText"
+
+        android:layout_toRightOf="@+id/MaxSpeedSummaryText"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:id="@+id/MaxSpeedSummaryValue">
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/avgspeeddot"
+        android:layout_below="@+id/MaxSpeedSummaryText"
+        android:textSize="20dp"
+        android:id="@+id/MedianSpeedText">
+
+        ></TextView>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/MaxSpeedSummaryText"
+
+        android:layout_toRightOf="@+id/MedianSpeedText"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:id="@+id/MedianSpeedValue">
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calspnter"
+        android:layout_below="@+id/MedianSpeedText"
+        android:textSize="20dp"
+        android:id="@+id/CaloriesSummaryText">
+
+        ></TextView>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/MedianSpeedText"
+
+        android:layout_toRightOf="@+id/CaloriesSummaryText"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:id="@+id/CaloriesSummaryValue">
+        ></TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="false"
+        android:text="@string/stopanim"
+        android:onClick="animationButton"
+        android:id="@+id/anim_button"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="false"
+        android:visibility="invisible"
+        android:text="          Share          "
+        android:onClick="shareClick"
+        android:id="@+id/share_button"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/runnanim"
+        android:paddingTop="200dp"
+        android:id="@+id/tvLabel3"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/anim_button"
+        android:layout_below="@id/CaloriesSummaryText"
+        android:id="@+id/child_fragment_container"
+         ></FrameLayout>
+</RelativeLayout>

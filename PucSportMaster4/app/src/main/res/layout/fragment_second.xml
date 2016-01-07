@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView android:id="@+id/minutes_id"
+        android:text="00"
+
+        android:textColor="@color/colorAccent"
+
+
+        android:textSize="50dp"
+        android:layout_toLeftOf="@+id/DoubleDotMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text=":"
+
+        android:textColor="@color/colorAccent"
+        android:id="@+id/doubleDot"
+        android:layout_toLeftOf="@id/minutes_id"
+
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView android:text=":"
+
+        android:textColor="@color/colorAccent"
+        android:id="@+id/DoubleDotMin"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView android:id="@+id/hours_id"
+        android:layout_toLeftOf="@id/doubleDot"
+        android:text="00"
+        android:textColor="@color/colorAccent"
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <TextView android:id="@+id/seconds_id"
+        android:text="00"
+
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@id/DoubleDotMin"
+
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="."
+
+        android:layout_toRightOf="@+id/seconds_id"
+
+        android:textSize="50dp"
+        android:id="@+id/secDot"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView android:id="@+id/tenth_id"
+        android:text="0"
+
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@+id/secDot"
+
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:visibility="invisible"
+        android:id="@+id/tvLabel2"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView android:id="@+id/dist_m"
+
+        android:text="000"
+        android:paddingLeft="5dp"
+        android:layout_above="@+id/dist"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distString"
+        android:id="@+id/dist"
+        android:paddingLeft="5dp"
+        android:textSize="25dp"
+
+        android:layout_above="@+id/btnStart"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/paceString"
+        android:id="@+id/pace"
+        android:paddingRight="20dp"
+        android:textSize="25dp"
+        android:gravity="end"
+        android:layout_below="@+id/dist_m"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView android:id="@+id/pace_l"
+        android:text="00"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorAccent"
+        android:paddingRight="15dp"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dist"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="25dp"
+        android:layout_height="wrap_content"
+        android:text="@string/caloriesString"
+        android:id="@+id/cal"
+
+        android:layout_alignTop="@+id/dist"
+        android:layout_centerHorizontal="true" />
+    <TextView android:id="@+id/calValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/cal"
+        android:textSize="30dp"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/startString"
+        android:id="@+id/btnStart"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClickStart"
+        android:textAlignment="center"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/stopString"
+        android:id="@+id/btnStop"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClickStop"
+        android:layout_below="@+id/dist"
+
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:onClick="onClickPause"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/pauseString"
+        android:id="@+id/btnPause"
+
+        android:layout_alignEnd="@+id/tvLabel2"
+        android:layout_gravity="center" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/durString"
+        android:textSize="40dp"
+        android:id="@+id/textView2"
+        android:layout_below="@id/DoubleDotMin"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

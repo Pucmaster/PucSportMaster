@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string name="app_name">PucSportMaster</string>
+
+        <!-- TODO: Remove or change this placeholder text -->
+        <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string name="title_activity_maps">Mapa</string>
+        <string name="stopString">Stop</string>
+        <string name="startString">Štart</string>
+        <string name="pauseString">Pauza</string>
+        <string name="resumeString">Pokračuj</string>
+        <string name="distString">Ďiaľka</string>
+        <string name="caloriesString">Kalórie</string>
+        <string name="paceString">Tempo</string>
+        <string name="durString">Dĺžka</string>
+        <string name="action_settings">Nastavenia</string>
+        <string name="title_activity_search">PucWeather</string>
+        <string name="buttontext">Potvrď</string>
+        <string name="defaultCityName">žiadne info</string>
+        <string name="powered">poháňané openweathermap.org</string>
+        <string name="celsius">°C</string>
+        <string name="title_activity_puc_sport_master_login">Prihlás sa</string>
+
+        <!-- Strings related to login -->
+        <string name="prompt_email">Email</string>
+        <string name="prompt_password">Heslo (voliteľné)</string>
+        <string name="action_sign_in">Prihlás alebo registruj</string>
+        <string name="action_sign_in_short">Prihlás sa</string>
+        <string name="error_invalid_email">Tento email je neplatný</string>
+        <string name="error_invalid_password">This password is too short</string>
+        <string name="error_incorrect_password">This password is incorrect</string>
+        <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+        <string name="username">Meno</string>
+        <string name="idString">Id</string>
+        <string name="dateString">Dátum</string>
+        <string name="postTimeString">Čas zdieľania</string>
+        <string name="stats">Bežecké info</string>
+        <string name="dist">Ďiaľka</string>
+        <string name="dur">Dľžka</string>
+        <string name="avgspd">Priemerná rýchlosť</string>
+        <string name="caloriesSpentString">Spálené kalórie</string>
+        <string name="moreInfoString">Viac info</string>
+        <string name="totalDistString">Celková Ďiaľka</string>
+        <string name="TotalCalString">Celkové kalórie</string>
+        <string name="runsString">Počet behov</string>
+        <string name="noString">Nie</string>
+        <string name="yesString">Ano</string>
+        <string name="registerString">Chcete sa registrovať ako nový používateľ?</string>
+        <string name="Registration">Registrácia</string>
+        <string name="email">Napíš email</string>
+        <string name="pass">Napíš heslo</string>
+        <string name="userTypename">Napíš meno</string>
+        <string name="finish">Ukonči</string>
+        <string name="usernm">používateľ</string>
+        <string name="runsumm">údaje bežca</string>
+        <string name="totaldist">celková Ďiaľka</string>
+        <string name="caloriesSpenter">spálené kalórie</string>
+        <string name="runners">počet behov</string>
+        <string name="lstRunAct">Posledné bežecké aktivity</string>
+        <string name="desc">Popis</string>
+        <string name="example">Example application</string>
+        <string name="summ">Sumarizácia posledného behu</string>
+        <string name="runnanim">Animacia behu</string>
+        <string name="stopanim">Stop animation</string>
+        <string name="calspnter">Spálené kalórie:</string>
+        <string name="avgspeeddot">Priemerná rýchlosť:</string>
+        <string name="mxspeed">Maximálna rýchlosť:</string>
+        <string name="totaldistdot">Celková Ďiaľka</string>
+        <string name="ttltime">Celkový čas:</string>
+        <string name="wrongpass">Zlé heslo skúste znova</string>
+        <string name="infoTab">Informácie</string>
+        <string name="BehTAb">Beh</string>
+        <string name="sumTab">Sumarizácia</string>
+        <string name="geonotinst">Geolokácia nenainštalovaná</string>
+        <string name="nointcon">ˇŽiadne internetové spojenie</string>
+        <string name="maploaded">Mapa načítaná</string>
+        <string name="noperm">Prístup zamietnutý</string>
+        <string name="restartanim">Reštartovať animáciu</string>
+        <string name="animstopped">Zastaviť animáciu</string>
+        <string name="animrestarted">animácia reštarovaná</string>
+        <string name="alreadyexist">Používateľ už existuje</string>
+        <string name="emailexist">email už existuje</string>
+        <string name="wrongemail">Zlý email</string>
+
+
+</resources>

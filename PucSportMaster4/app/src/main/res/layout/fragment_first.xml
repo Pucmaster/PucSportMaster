@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+
+        android:background="@drawable/kosice_dom3">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:background ="#88676767"
+            android:id="@+id/weather_container"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentStart="true"
+            ></FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="3dp"
+
+            android:layout_height="match_parent"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:background ="#86676767"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/background_light"
+                android:layout_height="wrap_content"
+                android:text="@string/usernm"
+                android:textSize="20dp"
+                android:paddingTop="5dp"
+                android:id="@+id/UsernameText"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@android:color/background_light"
+                android:layout_height="wrap_content"
+                android:text="@string/runsumm"
+                android:textSize="20dp"
+                android:paddingTop="5dp"
+                android:id="@+id/RunningSummaryText"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_light"
+                android:text="@string/totaldist"
+                android:textSize="20dp"
+                android:paddingTop="5dp"
+                android:id="@+id/TotalDistanceText"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_light"
+                android:text="000"
+                android:textSize="20dp"
+
+                android:id="@+id/TotalDistanceValue"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/background_light"
+                android:text="@string/caloriesSpenter"
+                android:textSize="20dp"
+                android:id="@+id/TotalCaloriesSpentText"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000"
+                android:textSize="20dp"
+                android:textColor="@android:color/background_light"
+
+                android:id="@+id/TotalCaloriesSpentTextValue"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/runners"
+                android:textColor="@android:color/background_light"
+                android:textSize="20dp"
+                android:id="@+id/RunsCountText"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000"
+                android:textSize="20dp"
+                android:textColor="@android:color/background_light"
+                android:id="@+id/RunsCountValue"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:id="@+id/tvLabel"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/lstRunAct"
+           android:layout_weight="1"
+            android:textColor="@android:color/background_light"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@android:id/list" />
+
+</LinearLayout>
